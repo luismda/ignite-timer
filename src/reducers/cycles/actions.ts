@@ -7,25 +7,42 @@ export enum ActionTypes {
   SET_ACTIVE_CYCLE_ID = 'SET_ACTIVE_CYCLE_ID',
 }
 
+type AddNewCycleActionReturnProps = ReturnType<typeof addNewCycleAction>
+type InterruptCurrentCycleActionReturnProps = ReturnType<
+  typeof interruptCurrentCycleAction
+>
+type MarkCurrentCycleAsFinishedActionReturnProps = ReturnType<
+  typeof markCurrentCycleAsFinishedAction
+>
+type SetActiveCycleIdActionReturnProps = ReturnType<
+  typeof setActiveCycleIdAction
+>
+
+export type Action =
+  | AddNewCycleActionReturnProps
+  | InterruptCurrentCycleActionReturnProps
+  | MarkCurrentCycleAsFinishedActionReturnProps
+  | SetActiveCycleIdActionReturnProps
+
 export function addNewCycleAction(newCycle: Cycle) {
   return {
     type: ActionTypes.ADD_NEW_CYCLE,
     payload: {
       newCycle,
     },
-  }
+  } as const
 }
 
 export function interruptCurrentCycleAction() {
   return {
     type: ActionTypes.INTERRUPT_CURRENT_CYCLE,
-  }
+  } as const
 }
 
 export function markCurrentCycleAsFinishedAction() {
   return {
     type: ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
-  }
+  } as const
 }
 
 export function setActiveCycleIdAction(cycleId: string | null) {
@@ -34,5 +51,5 @@ export function setActiveCycleIdAction(cycleId: string | null) {
     payload: {
       cycleId,
     },
-  }
+  } as const
 }
