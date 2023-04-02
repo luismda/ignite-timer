@@ -1,20 +1,18 @@
 # Ignite Timer ⏰
 
-Este projeto é um timer no estilo pomodoro, que foi desenvolvido durante o segundo módulo da trila de React.js do programa Ignite da
-[Rocketseat](https://github.com/rocketseat-education). O objetivo foi estudar alguns conceitos mais avançados do React.js, como o hook useEffect,
-Context API e Reducers, além do uso de roteamento, manipulação de formulários e componentes estilizados.
+This project is a timer on style pomodoro, was developed during second module of React.js trail of Ignite program of [**Rocketseat**](https://github.com/rocketseat-education). The objective was study some concepts more advanceds of React.js as `useEffect` hook, Context API and Reducers, also use of routing, form manipulations and styled components.
 
 #### 📌 Links
-- [Figma da aplicação](https://www.figma.com/file/3J6CjXMHc32xGG5MPZoMOd/Ignite-Timer-(Community)?node-id=0%3A1)
-- [Veja o projeto](https://luismda.github.io/ignite-timer/)
+- [Figma](https://www.figma.com/file/3J6CjXMHc32xGG5MPZoMOd/Ignite-Timer-(Community)?node-id=0%3A1)
+- [Test the application](https://luismda.github.io/ignite-timer/)
 
-#### ⏱ Funcionalidades
-- Iniciar ciclo de uma tarefa com o tempo mínimo de 5 minutos e no máximo 60 minutos.
-- Interromper o ciclo ativo.
-- Concluir o ciclo ativo.
-- Visualizar o histórico de ciclos realizados.
+#### ⏱ Functionalities
+- Start a taks cycle with minimum time of 5 minutes and of maximum 60 minutes.
+- Interrupt the active cycle.
+- Complete the active cycle.
+- See the history of cycles performed.
 
-#### 🛠 Linguagens e tecnologias
+#### 🛠 Tools and technologies
 - JavaScript
 - TypeScript
 - React.js
